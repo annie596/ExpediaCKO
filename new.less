@@ -5,44 +5,39 @@
 .insurance {
     fieldset {
         color: #000000;
-        
+        font-weight: normal;
         h3 {
-            font-size: 1.3em
+            font-size: 1.2em;
         }
-
         #decline {
             background-color: transparent;
         }
-        
         .change-ins {
-            color: green;
+            color: @link;
         }
-        
         .ins-added, .ins-declined {
-            color: blue; 
+            color: blue;
         }
-        
         .ins-bullet {
+
             .ins-bullet-text {
-                font-size: 1.17em;
-                font-weight: 500;
+                font-weight: bold;
+                padding-bottom: 3px;
+                font-size: 1.1em;
             }
             ul li {
-                font-size: 1.1em;
                 // padding-bottom: 0.25em;
-                font-weight: 400;
+                font-weight: normal;
                 list-style-position: inside;
             }
         }
-        
         .ins-detail {
-            margin-top: 0.1em;
+            margin-top: 2px;
         }
-        
         .ins-terms-link {
             font-size: 0.75em;
+            margin-bottom: 0;
         }
-        
         label.check {
             display:inline-block;
             width:100%;
@@ -51,6 +46,31 @@
             // line-height: 21px;
             .inline-label {
                 font-size:0.9em;
+            }
+        }
+        @media (min-width: @mqMinDesktop) {
+            #ins-plan-1 {
+                float: left;
+            }
+            #ins-plan-2 {
+                float: left;
+            }
+            #noplan {
+                clear: both;
+            }
+        }
+        @media (min-width: 1165px) {
+            #ins-plan-1 {
+                float: left;
+            }
+            #ins-plan-2 {
+                float: right;
+                .ins-terms-link {
+                    margin-bottom: 167px;
+                }
+            }
+            #noplan {
+                clear: both;
             }
         }
     }
