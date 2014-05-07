@@ -1457,10 +1457,6 @@ label.saved-card-description {
     padding-left: 39px;
   }
 }
-h4.step {
-  background-color: #0065b8;
-  color: #ffffff;
-}
 /*insurance*/
 #ins-added,
 #ins-declined {
@@ -1471,6 +1467,12 @@ h4.step {
 }
 .insurance fieldset h3 {
   font-size: 1.3em;
+}
+.insurance fieldset #decline {
+  background-color: transparent;
+}
+.insurance fieldset .change-ins {
+  color: green;
 }
 .insurance fieldset .ins-added,
 .insurance fieldset .ins-declined {
@@ -1499,8 +1501,5 @@ h4.step {
 }
 .insurance fieldset label.check .inline-label {
   font-size: 0.9em;
-}
-.insurance fieldset #decline {
-  background-color: transparent;
 }
 /*@import "lib/trip-summary-v1.less";*/
