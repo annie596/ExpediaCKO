@@ -676,7 +676,13 @@
                                     <span class="label required">Debit/Credit card number
                                         <span>*</span>
                                     </span>
-                                    <input type="text" placeholder="" value="" maxlength="19" />
+                                    <input type="text" placeholder="" value="" maxlength="19" onfocus="scrollBack(this)"/>
+                                    <script>function scrollBack(pay) {
+                                        if (!document.getElementById('ins-option1-button').checked && !document.getElementById('ins-option2-button').checked && !document.getElementById('ins-option3-button').checked) {
+                                            document.getElementById('ins-title').scrollIntoView(true);
+                                        }
+                                    }
+                                    </script>
                                 </label>
                                 <label class="select icon icon-toggle180 field-cardtype ">
                                     <span class="label required">Card type
