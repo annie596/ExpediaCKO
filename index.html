@@ -483,20 +483,21 @@
                                     <span>*</span>
                                 </span>
                                 <label class="remove-margin check">
-                                    <input type="radio" name="gender" value="male" checked="checked">
+                                    <input type="radio" name="hotel" value="male" checked="checked">
                                     <span style="color:#333333;" class="inline-label">James</span>
                                 </label>
                                 <br/>
                                 <label class="remove-margin check">
-                                    <input type="radio" name="gender" value="female">
+                                    <input type="radio" name="hotel" value="female">
                                     <span style="color:#333333;" class="inline-label">Helen</span>
                                 </label>
                                 <br/>
-                                <label class="remove-margin">
-                                    <input type="radio" name="gender"/>
-                                    <input class="text cko-field inline-label" type="text" placeholder="Other Contacts" />
-                                    <br />
+                                <label class="remove-margin check">
+                                    <input type="radio" name="hotel" id="hotelothers"/>
+                                    <span style="color:#333333;" class="inline-label">Others</span>
+                                    <input style="display:none" class="text cko-field inline-label" type="text" placeholder="Other Contacts" />
                                 </label>
+                                    <br />
                             </fieldset>
                             <!-- end of hotel>
                             <!-- start of activity-->
@@ -539,6 +540,7 @@
                         </hgroup>
                         <fieldset>
                         <h4 style="margin-top:0px;color:#ffffff;background-color:#0065b8;padding:5px 0px 5px 10px;" class="step" id="ins-title">Step 2 of 4: Choose Insurance</h4>
+                        <span class="label required"> <span>*</span>Please select a travel protection option</span>
                         <article class="no-target cf segment-form insurance">
 
 
