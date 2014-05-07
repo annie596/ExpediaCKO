@@ -1,0 +1,47 @@
+h4.step {
+  background-color: #0065b8;
+  color: #ffffff;
+}
+/*insurance*/
+#ins-added,
+#ins-declined {
+  display: none;
+}
+.insurance fieldset {
+  color: #000000;
+}
+.insurance fieldset h3 {
+  font-size: 1.3em;
+}
+.insurance fieldset .ins-added,
+.insurance fieldset .ins-declined {
+  color: blue;
+}
+.insurance fieldset .ins-bullet .ins-bullet-text {
+  font-size: 1.17em;
+  font-weight: 500;
+}
+.insurance fieldset .ins-bullet ul li {
+  font-size: 1.1em;
+  padding-bottom: 0.25em;
+  font-weight: 400;
+  list-style-position: inside;
+}
+.insurance fieldset .ins-detail {
+  margin-top: 0.1em;
+}
+.insurance fieldset .ins-terms-link {
+  font-size: 0.75em;
+}
+.insurance fieldset label.check {
+  display: inline-block;
+  width: 100%;
+  padding: 20px 5px 20px 10px;
+  background-color: #f5e9ba;
+}
+.insurance fieldset label.check .inline-label {
+  font-size: 0.9em;
+}
+.insurance fieldset #decline {
+  background-color: transparent;
+}
