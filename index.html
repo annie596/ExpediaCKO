@@ -20,8 +20,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="lib/core.css" />
     <link rel="stylesheet" href="lib/responsive.css" />
-    <link rel="stylesheet" href="lib/custom.css" />
-    <link rel="stylesheet" type="text/css" href="lib/new.css">
+    <link rel="stylesheet" href="custom.css" />
 </head>
 
 <body class="wrap cf layout-2col-stack inverse checkout">
@@ -230,21 +229,21 @@
                     </article>
                 </section>
                 <section class="segmented-list">
-                     <!-- ================== Traveler Info ================== -->
+                    <!-- ================== Traveler Info ================== -->
                     <article class="segment no-target cf segment-form">
                         <hgroup>
                             <h3>
                                 <span class="icon icon-traveler"></span>
                             </h3>
                         </hgroup>
-                        <fieldset>    
+                        <fieldset>
                             <h4 style="margin-top:0px;color:#ffffff;background-color:#0065b8;padding:5px 0px 5px 10px;">Step 1 of 4: Traveler Information</h4>
                             <h4 style="margin-bottom:0px">Flight:
                                 <span class="light-weight">2 Adults</span>
                             </h4>
                             <!-- ================== Traveler 1 ================== -->
                             <article class="no-target cf segment-form notsignedin toggle open">
-                                <h5 style="margin:10px 0px 0px 0px; background-color:#d1eaff; padding:5px;"><a href="#traveler1" aria-controls="traveler1" class="toggle-trigger open" data-control="toggle" data-transition="slide">Travler 1 info<span class="icon icon-expand"></span></a>
+                                <h5 style="margin:10px 0px 0px 0px; background-color:#d1eaff; padding:5px;"><a href="#traveler1" aria-controls="traveler1" class="toggle-trigger open" data-control="toggle" data-transition="slide">Travler 1<span class="icon icon-expand"></span></a>
                                 </h5>
                                 <div id="traveler1" class="toggle-pane" role="region" aria-expanded="true">
                                     <div class="toggle-inner cf">
@@ -258,7 +257,7 @@
                                                     Traveler names must match government-issued photo ID exactly.
                                                 </p>
                                                 <input style="width:46%" type="text" placeholder="First name" value="" />
-												<input style="width:46%" type="text" placeholder="Last name" value="" />
+                                                <input style="width:46%" type="text" placeholder="Last name" value="" />
                                             </label>
                                             <label class="text field-email">
                                                 <span class="label required">Email address
@@ -370,9 +369,11 @@
                                     </div>
                                 </div>
                             </article>
+
+
                             <!-- ==================== Traveler 2 ============================ -->
                             <article class="no-target cf segment-form notsignedin toggle open">
-                                <h5 style="margin:10px 0px 0px 0px; background-color:#d1eaff; padding:5px;"><a href="#traveler2" aria-controls="traveler2" class="toggle-trigger open" data-control="toggle" data-transition="slide">Travler 2 info<span class="icon icon-expand"></span></a>
+                                <h5 style="margin:10px 0px 0px 0px; background-color:#d1eaff; padding:5px;"><a href="#traveler2" aria-controls="traveler2" class="toggle-trigger open" data-control="toggle" data-transition="slide">Travler 2<span class="icon icon-expand"></span></a>
                                 </h5>
                                 <div id="traveler2" class="toggle-pane" role="region" aria-expanded="true">
                                     <div class="toggle-inner cf">
@@ -386,7 +387,7 @@
                                                     Traveler names must match government-issued photo ID exactly.
                                                 </p>
                                                 <input style="width:46%" type="text" placeholder="First name" value="" />
-												<input style="width:46%" type="text" placeholder="Last name" value="" />
+                                                <input style="width:46%" type="text" placeholder="Last name" value="" />
                                             </label>
                                             <label class="text">
                                                 <div style="background-color:#f5f5f5; padding:10px;">
@@ -473,6 +474,8 @@
                                     </div>
                                 </div>
                             </article>
+
+
                             <!-- start of hotel-->
                             <h4 style="margin-bottom:0px">Hotel:
                                 <span class="light-weight">3 Nights, 1 Room, King bed</span>
@@ -493,12 +496,14 @@
                                 </label>
                                 <br/>
                                 <label class="remove-margin">
-                                    <input type="radio" name="gender"/>
+                                    <input type="radio" name="gender" />
                                     <input class="text cko-field inline-label" type="text" placeholder="Other Contacts" />
                                     <br />
                                 </label>
                             </fieldset>
                             <!-- end of hotel>
+                            
+
                             <!-- start of activity-->
                             <h4 style="margin-bottom:0px">Activities:
                                 <span class="light-weight">Art Museum, 2 Adults</span>
@@ -519,7 +524,7 @@
                                 </label>
                                 <br/>
                                 <label class="remove-margin">
-                                    <input type="radio" name="activity"/>
+                                    <input type="radio" name="activity" />
                                     <input class="text cko-field inline-label" type="text" placeholder="Other Contacts" />
                                     <br />
                                 </label>
@@ -538,283 +543,278 @@
                             </h3>
                         </hgroup>
                         <fieldset>
-                        <h4 style="margin-top:0px;color:#ffffff;background-color:#0065b8;padding:5px 0px 5px 10px;" class="step" id="ins-title">Step 2 of 4: Choose Insurance</h4>
-                        <article class="no-target cf segment-form insurance">
+                            <h4 style="margin-top:0px;color:#ffffff;background-color:#0065b8;padding:5px 0px 5px 10px;" class="step" id="ins-title">Step 2 of 4: Choose Insurance</h4>
+                            <article class="no-target cf segment-form insurance">
 
 
-                            <div class="alert alert-success icon icon-success with-close-btn" id="ins-added">
-                                <div class="alert-message">You've added travel protection to your trip!</div>
-                                <span class="change-ins" onClick="showInsPlan();">Change</span>
-                            </div>
-
-                            <div class="alert alert-warn icon icon-warn with-close-btn" id="ins-declined">
-                                <h5 class="alert-title">Warning</h5>
-                                <div class="alert-message">Your trip is not protected.
-                                    <span class="change-ins" onClick="showInsPlan();">Change</span>
-                                </div>
-                            </div>
-
-                            <div id="ins-plans">
-                                <fieldset>
-                                    <h3>Option 1</h3>
-                                    <div class="insurance-benefits cf">
-                                        <div class="ins-bullet">
-                                            <div>
-                                                <span class="icon icon-success"></span>
-                                                <span class="ins-bullet-text">Change for ANY reason</span>
-                                                <ul class="ins-detail">
-                                                    <li>No fees for one-time flight change</li>
-                                                    <li>Expedia refunds 100% of hotel, car and activities</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="ins-bullet">
-                                            <div>
-                                                <span class="icon icon-success"></span>
-                                                <span class="ins-bullet-text">Cancel for medical reasons</span>
-
-                                                <ul class="ins-detail">
-                                                    <li>100% refund on your flight cost or unused hotel days</li>
-
-                                                </ul>
-                                            </div>
-                                        </div>
-
-                                        <div class="ins-bullet">
-                                            <div>
-                                                <span class="icon icon-success"></span>
-                                                <span class="ins-bullet-text">Protection during your trip, up to</span>
-
-                                                <ul class="ins-detail">
-                                                    <li>$5,000 for covered medical expenses</li>
-                                                    <li>$1,000 for lost items (camera, phone, laptop etc.)</li>
-                                                    <li>$500 for meals, hotel, transport if trip is delayed</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <a href="http://www.expedia.com/daily/promos/travel_protection_plans/car_print.asp" target="_blank" class="ins-terms-link">View terms, conditions and plan sponsor <span class="icon icon-popup icon-spacer"></span></a>
-
-                                    <label class="check" style="display:inline-block;">
-                                        <span class="inline-label">
-                                            <input type="radio" name="ins-choice" value="a" id="ins-option1-button" onClick="selectInsurance();">Yes, add this plan for
-                                            <span class="insurance-daily">$34</span>/person</span>
-                                        </input>
-                                    </label>
-
-                                </fieldset>
-
-
-
-                                <fieldset>
-                                    <h3>Option 2</h3>
-                                    <div class="insurance-benefits cf">
-                                        <div class="ins-bullet">
-                                            <div>
-                                                <span class="icon icon-success"></span>
-                                                <span class="ins-bullet-text">Change for ANY reason</span>
-                                                <ul class="ins-detail">
-                                                    <li>No fees for one-time flight change</li>
-                                                    <li>Expedia refunds 100% of hotel, car and activities</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-                                    <a href="http://www.expedia.com/daily/promos/travel_protection_plans/car_print.asp" target="_blank" class="ins-terms-link">View terms, conditions and plan sponsor <span class="icon icon-popup icon-spacer"></span></a>
-
-                                    <label class="check" style="display:inline-block;">
-                                        <span class="inline-label">
-                                            <input type="radio" name="ins-choice" value="a" id="ins-option2-button" onClick="selectInsurance();">Yes, add this plan for
-                                            <span class="insurance-daily">$19</span>/person</span>
-                                        </input>
-                                    </label>
-
-
-
-
-                                </fieldset>
-
-
-                                <fieldset>
-                                    <label class="check" id="decline" style="display:inline-block;">
-                                        <span class="inline-label">
-                                            <input type="radio" name="ins-choice" value="a" id="ins-option3-button" onClick="selectInsurance();">No. I don't need trip protection and I understand this is not available after purchase.</span>
-                                        </input>
-                                    </label>
-                                </fieldset>
-
-                            </div>
-                        </article>
-                    </fieldset>
-					</article>
-
-
-                        <!-- ================== Payment ================== -->
-                        <article class="segment no-target cf segment-form">
-                            <hgroup>
-                                <h3>
-                                    <span class="icon icon-shop"></span>
-                                </h3>
-                            </hgroup>
-                            <fieldset>
-                                <h4 style="margin-top:0px;color:#ffffff;background-color:#0065b8;padding:5px 0px 5px 10px;">Step 3 of 4: Payment</h4>
-                                <div class="cards-no-label">
-                                    <object class="cc-box-color visa" type="image/svg+xml" data="img/mastercard.svg"></object>
-                                    <object class="cc-box-color mastercard" type="image/svg+xml" data="img/visa.svg"></object>
-                                    <object class="cc-box-color amex" type="image/svg+xml" data="img/amex.svg"></object>
-                                    <object class="cc-box-color discover" type="image/svg+xml" data="img/discover.svg"></object>
-                                    <object class="cc-box-color diners" type="image/svg+xml" data="img/diners.svg"></object>
-                                    <object class="cc-box-color jcb" type="image/svg+xml" data="img/jcb.svg"></object>
-                                    <div class="cf">
+                                <div class="alert alert-success icon icon-success with-close-btn" id="ins-added">
+                                    <div class="alert-message">You've added travel protection to your trip!
+                                        <span class="change-ins" onClick="showInsPlan();">Change</span>
                                     </div>
                                 </div>
-                                <label class="text field-cardnumber ">
-                                    <span class="label required">Debit/Credit card number
-                                        <span>*</span>
-                                    </span>
-                                    <input type="text" placeholder="" value="" maxlength="19" />
-                                </label>
-                                <label class="select icon icon-toggle180 field-cardtype ">
-                                    <span class="label required">Card type
+
+                                <div class="alert alert-warn icon icon-warn with-close-btn" id="ins-declined">
+                                    <h5 class="alert-title">Warning</h5>
+                                    <div class="alert-message">Your trip is not protected.
+                                        <span class="change-ins" onClick="showInsPlan();">Change</span>
+                                    </div>
+                                </div>
+
+                                <div id="ins-plans">
+                                    <fieldset id="ins-plan-1">
+                                        <h3>Plan 1</h3>
+                                        <div class="insurance-benefits cf">
+                                            <div class="ins-bullet">
+                                                <div>
+                                                    <span class="icon icon-success"></span>
+                                                    <span class="ins-bullet-text">Change for ANY reason</span>
+                                                    <ul class="ins-detail">
+                                                        <li>No fees for one-time flight change</li>
+                                                        <li>Expedia refunds 100% of hotel, car and activities</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="ins-bullet">
+                                                <div>
+                                                    <span class="icon icon-success"></span>
+                                                    <span class="ins-bullet-text">Cancel for medical reasons</span>
+
+                                                    <ul class="ins-detail">
+                                                        <li>100% refund on your flight cost or unused hotel days</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            <div class="ins-bullet">
+                                                <div>
+                                                    <span class="icon icon-success"></span>
+                                                    <span class="ins-bullet-text">Protection during your trip, up to</span>
+
+                                                    <ul class="ins-detail">
+                                                        <li>$5,000 for covered medical expenses</li>
+                                                        <li>$1,000 for lost items (camera, phone, laptop etc.)</li>
+                                                        <li>$500 for meals, hotel, transport if trip is delayed</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <a href="http://www.expedia.com/daily/promos/travel_protection_plans/car_print.asp" target="_blank" class="ins-terms-link">View terms, conditions and plan sponsor <span class="icon icon-popup icon-spacer"></span></a>
+
+                                        <label class="check" style="display:inline-block;">
+                                            <span class="inline-label">
+                                                <input type="radio" name="ins-choice" value="a" id="ins-option1-button" onClick="selectInsurance();">Yes, add this plan for
+                                                <span class="insurance-daily">$34</span>/person</span>
+                                            </input>
+                                        </label>
+
+                                    </fieldset>
+
+                                    <fieldset id="ins-plan-2">
+                                        <h3>Plan 2</h3>
+                                        <div class="insurance-benefits cf">
+                                            <div class="ins-bullet">
+                                                <div>
+                                                    <span class="icon icon-success"></span>
+                                                    <span class="ins-bullet-text">Change for ANY reason</span>
+                                                    <ul class="ins-detail">
+                                                        <li>No fees for one-time flight change</li>
+                                                        <li>Expedia refunds 100% of hotel, car and activities</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <a href="http://www.expedia.com/daily/promos/travel_protection_plans/car_print.asp" target="_blank" class="ins-terms-link">View terms, conditions and plan sponsor <span class="icon icon-popup icon-spacer"></span></a>
+
+                                        <label class="check" style="display:inline-block;">
+                                            <span class="inline-label">
+                                                <input type="radio" name="ins-choice" value="a" id="ins-option2-button" onClick="selectInsurance();">Yes, add this plan for
+                                                <span class="insurance-daily">$19</span>/person</span>
+                                            </input>
+                                        </label>
+                                    </fieldset>
+                                </div>
+
+                                <div id="noplan">
+                                    <fieldset>
+                                        <label class="check" id="decline" style="display:inline-block;">
+                                            <span class="inline-label">
+                                                <input type="radio" name="ins-choice" value="a" id="ins-option3-button" onClick="selectInsurance();">No. I don't need trip protection and I understand this is not available after purchase.</span>
+                                            </input>
+                                        </label>
+                                    </fieldset>
+                                </div>
+
+                            </article>
+                        </fieldset>
+                    </article>
+
+
+                    <!-- ================== Payment ================== -->
+                    <article class="segment no-target cf segment-form">
+                        <hgroup>
+                            <h3>
+                                <span class="icon icon-shop"></span>
+                            </h3>
+                        </hgroup>
+                        <fieldset>
+                            <h4 style="margin-top:0px;color:#ffffff;background-color:#0065b8;padding:5px 0px 5px 10px;">Step 3 of 4: Payment</h4>
+                            <div class="cards-no-label">
+                                <object class="cc-box-color visa" type="image/svg+xml" data="img/mastercard.svg"></object>
+                                <object class="cc-box-color mastercard" type="image/svg+xml" data="img/visa.svg"></object>
+                                <object class="cc-box-color amex" type="image/svg+xml" data="img/amex.svg"></object>
+                                <object class="cc-box-color discover" type="image/svg+xml" data="img/discover.svg"></object>
+                                <object class="cc-box-color diners" type="image/svg+xml" data="img/diners.svg"></object>
+                                <object class="cc-box-color jcb" type="image/svg+xml" data="img/jcb.svg"></object>
+                                <div class="cf">
+                                </div>
+                            </div>
+                            <label class="text field-cardnumber ">
+                                <span class="label required">Debit/Credit card number
+                                    <span>*</span>
+                                </span>
+                                <input type="text" placeholder="" value="" maxlength="19" />
+                            </label>
+                            <label class="select icon icon-toggle180 field-cardtype ">
+                                <span class="label required">Card type
+                                    <span>*</span>
+                                </span>
+                                <select>
+                                    <option value="1">MasterCard</option>
+                                    <option value="2">Visa</option>
+                                    <option value="3">American Express</option>
+                                </select>
+                            </label>
+                            <div class="cf">
+                            </div>
+                            <fieldset class="no-bottom-margin expiration-fields">
+                                <label class="select icon icon-toggle180 field-expmonth ">
+                                    <span class="label required">Expiration date
                                         <span>*</span>
                                     </span>
                                     <select>
-                                        <option value="1">MasterCard</option>
-                                        <option value="2">Visa</option>
-                                        <option value="3">American Express</option>
+                                        <option value="1">Month</option>
+                                        <option value="2">01 - Jan</option>
+                                        <option value="3">02 - Feb</option>
+                                    </select>
+                                </label>
+                                <label class="select icon icon-toggle180 field-expyear ">
+                                    <span class="label required " style="visibility:hidden;">Year
+                                        <span>*</span>
+                                    </span>
+                                    <select>
+                                        <option value="1">Year</option>
+                                        <option value="2">2013</option>
+                                        <option value="3">2013</option>
                                     </select>
                                 </label>
                                 <div class="cf">
                                 </div>
-                                <fieldset class="no-bottom-margin expiration-fields">
-                                    <label class="select icon icon-toggle180 field-expmonth ">
-                                        <span class="label required">Expiration date
-                                            <span>*</span>
-                                        </span>
-                                        <select>
-                                            <option value="1">Month</option>
-                                            <option value="2">01 - Jan</option>
-                                            <option value="3">02 - Feb</option>
-                                        </select>
-                                    </label>
-                                    <label class="select icon icon-toggle180 field-expyear ">
-                                        <span class="label required " style="visibility:hidden;">Year
-                                            <span>*</span>
-                                        </span>
-                                        <select>
-                                            <option value="1">Year</option>
-                                            <option value="2">2013</option>
-                                            <option value="3">2013</option>
-                                        </select>
-                                    </label>
-                                    <div class="cf">
-                                    </div>
-                                </fieldset>
-                                <label class="text field-cvv ">
-                                    <span class="label required">Card identification number
-                                        <span>*</span>
-                                        <a href="#what-is-this" class="what-is-this-tooltip-icon" data-control='tooltip' data-width="225" data-arrow="true" aria-describedby="what-is-this" data-fade="out" data-tooltip-id="what-is-this-tooltip-icon">
-                                            <span class="icon icon-help"></span>
-                                        </a>
-                                    </span>
-                                    <input type="password" placeholder="" value="" maxlength="4" />
-                                    <div id="what-is-this" role="tooltip" class="visuallyhidden ">
-                                        <p class="cvv-example-label">
-                                            All cards (except American Express)
-                                        </p>
-                                        <img class="cvv-example" type="image/svg+xml" src="img/visacvv.svg" />
-                                        <p>
-                                            American Express
-                                        </p>
-                                        <img class="cvv-example" type="image/svg+xml" src="img/amexcvv.svg" />
-                                    </div>
-                                    <div class="cf">
-                                    </div>
-                                </label>
+                            </fieldset>
+                            <label class="text field-cvv ">
+                                <span class="label required">Card identification number
+                                    <span>*</span>
+                                    <a href="#what-is-this" class="what-is-this-tooltip-icon" data-control='tooltip' data-width="225" data-arrow="true" aria-describedby="what-is-this" data-fade="out" data-tooltip-id="what-is-this-tooltip-icon">
+                                        <span class="icon icon-help"></span>
+                                    </a>
+                                </span>
+                                <input type="password" placeholder="" value="" maxlength="4" />
+                                <div id="what-is-this" role="tooltip" class="visuallyhidden ">
+                                    <p class="cvv-example-label">
+                                        All cards (except American Express)
+                                    </p>
+                                    <img class="cvv-example" type="image/svg+xml" src="img/visacvv.svg" />
+                                    <p>
+                                        American Express
+                                    </p>
+                                    <img class="cvv-example" type="image/svg+xml" src="img/amexcvv.svg" />
+                                </div>
                                 <div class="cf">
                                 </div>
-                                <label class="text field-cardholdername">
-                                    <span class="label required">Cardholder name
-                                        <span>*</span>
-                                    </span>
-                                    <input type="text" placeholder="" value="" />
-                                </label>
-                                <label class="text field-billingzip">
-                                    <span class="label required">Billing ZIP code
-                                        <span>*</span>
-                                    </span>
-                                    <input type="text" placeholder="" value="" maxlength="8" />
-                                </label>
-                            </fieldset>
-                        </article>
-                        
+                            </label>
+                            <div class="cf">
+                            </div>
+                            <label class="text field-cardholdername">
+                                <span class="label required">Cardholder name
+                                    <span>*</span>
+                                </span>
+                                <input type="text" placeholder="" value="" />
+                            </label>
+                            <label class="text field-billingzip">
+                                <span class="label required">Billing ZIP code
+                                    <span>*</span>
+                                </span>
+                                <input type="text" placeholder="" value="" maxlength="8" />
+                            </label>
+                        </fieldset>
+                    </article>
+
                 </section>
 
 
-                        <!-- ================== Account Creation ================== -->
-                    <section class="segmented-list">
-                        <article class="segment no-target cf segment-form account-creation">
-                            <hgroup>
-                                <h3>
-                                    <img class="acct-creation-exp-logo" src="lib/exp-logo-mark.svg" />
-                                </h3>
-                            </hgroup>
-                            <fieldset style="padding-left:0;">
-                                <h3>Create an account
-                                    <span class="acct-creation-optional-callout">(optional)</span>
-                                </h3>
-                                <div class="acct-creation-benefits cf">
-                                    <div class="acct-creation-bullet">
-                                        <span class="icon icon-success"></span>
-                                        <span class="acct-bullet-text">Earn Expedia Rewards points</span>
-                                    </div>
-                                    <div class="acct-creation-bullet">
-                                        <span class="icon icon-success"></span>
-                                        <span class="acct-bullet-text">All your itineraries in one place</span>
-                                    </div>
-                                    <div class="acct-creation-bullet">
-                                        <span class="icon icon-success"></span>
-                                        <span class="acct-bullet-text">Faster checkout</span>
-                                    </div>
+                <!-- ================== Account Creation ================== -->
+                <section class="segmented-list">
+                    <article class="segment no-target cf segment-form account-creation">
+                        <hgroup>
+                            <h3>
+                                <img class="acct-creation-exp-logo" src="lib/exp-logo-mark.svg" />
+                            </h3>
+                        </hgroup>
+                        <fieldset style="padding-left:0;">
+                            <h3>Create an account
+                                <span class="acct-creation-optional-callout">(optional)</span>
+                            </h3>
+                            <div class="acct-creation-benefits cf">
+                                <div class="acct-creation-bullet">
+                                    <span class="icon icon-success"></span>
+                                    <span class="acct-bullet-text">Earn Expedia Rewards points</span>
                                 </div>
-                                <label class="text field-create-password">
-                                    <span class="label ">Email address</span>
-                                    <input type="text" value="james@gmail.com" />
-                                </label>
-                                <label class="text field-create-password">
-                                    <span class="label ">Create password</span>
-                                    <input type="password" placeholder="6-30 characters, no spaces" value="" />
-                                </label>
-                                <label class="text field-confirm-password">
-                                    <span class="label ">Confirm password</span>
-                                    <input type="text" placeholder="" value="" />
-                                </label>
-                                <label class="check">
-                                    <input type="checkbox" name="testBB" value="a" checked/>
-                                    <span class="inline-label">Earn free travel points with <a href="#">Expedia Rewards</a>
-                                    </span>
-                                </label>
-                            </fieldset>
-                        </article>
-                    </section>
-                        <!-- ================== Review and Book ================== -->
-                    <section class="segmented-list">
-                        <article class="complete-booking segment no-target cf segment-form">
-                            <h4 style="margin-top:0px;color:#ffffff;background-color:#0065b8;padding:5px 0px 5px 10px;">Last Step: Review and Book</h4>
-                            <p class="secondary">
-                                By completing this booking, I agree that I have read and accept the <a href="https://wwwexpediacom.trunk-stubbed.sb.karmalab.net/Checkout/RulesAndRestrictions?tripid=7a44000b-2cd9-454e-8cf6-ec92c6fc7f40">Rules &amp; Restrictions</a>, <a href="http://www.expedia.com/daily/service/legal.asp" target="_blank">Terms of Use</a> and <a href="http://www.expedia.com/daily/service/privacy.asp" target="_blank">Privacy Policy</a>.
-                            </p>
-                            <button class="btn btn-action btn-primary" data-cko-click="submitForm" id="complete-booking" type="button" onclick="javascript:$('#confirmmodal').fadeToggle();">
-                                <span class="btn-label">Complete Reservation
-                                    <span class="icon icon-toggle90"></span>
+                                <div class="acct-creation-bullet">
+                                    <span class="icon icon-success"></span>
+                                    <span class="acct-bullet-text">All your itineraries in one place</span>
+                                </div>
+                                <div class="acct-creation-bullet">
+                                    <span class="icon icon-success"></span>
+                                    <span class="acct-bullet-text">Faster checkout</span>
+                                </div>
+                            </div>
+                            <label class="text field-create-password">
+                                <span class="label ">Email address</span>
+                                <input type="text" value="james@gmail.com" />
+                            </label>
+                            <label class="text field-create-password">
+                                <span class="label ">Create password</span>
+                                <input type="password" placeholder="6-30 characters, no spaces" value="" />
+                            </label>
+                            <label class="text field-confirm-password">
+                                <span class="label ">Confirm password</span>
+                                <input type="text" placeholder="" value="" />
+                            </label>
+                            <label class="check">
+                                <input type="checkbox" name="testBB" value="a" checked/>
+                                <span class="inline-label">Earn free travel points with <a href="#">Expedia Rewards</a>
                                 </span>
-                            </button>
-                        </article>
-                    </section>
-                
+                            </label>
+                        </fieldset>
+                    </article>
+                </section>
+                <!-- ================== Review and Book ================== -->
+                <section class="segmented-list">
+                    <article class="complete-booking segment no-target cf segment-form">
+                        <h4 style="margin-top:0px;color:#ffffff;background-color:#0065b8;padding:5px 0px 5px 10px;">Last Step: Review and Book</h4>
+                        <p class="secondary">
+                            By completing this booking, I agree that I have read and accept the <a href="https://wwwexpediacom.trunk-stubbed.sb.karmalab.net/Checkout/RulesAndRestrictions?tripid=7a44000b-2cd9-454e-8cf6-ec92c6fc7f40">Rules &amp; Restrictions</a>, <a href="http://www.expedia.com/daily/service/legal.asp" target="_blank">Terms of Use</a> and <a href="http://www.expedia.com/daily/service/privacy.asp" target="_blank">Privacy Policy</a>.
+                        </p>
+                        <button class="btn btn-action btn-primary" data-cko-click="submitForm" id="complete-booking" type="button" onclick="javascript:$('#confirmmodal').fadeToggle();">
+                            <span class="btn-label">Complete Reservation
+                                <span class="icon icon-toggle90"></span>
+                            </span>
+                        </button>
+                    </article>
+                </section>
+
             </section>
         </div>
     </div>

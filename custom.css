@@ -997,6 +997,7 @@ label.saved-card-description {
 .insurance fieldset .ins-bullet {
   margin-bottom: 6px;
   font-size: 13px;
+  line-height: 18px;
 }
 .insurance fieldset .ins-bullet .icon-success {
   display: table-cell;
@@ -1457,20 +1458,76 @@ label.saved-card-description {
     padding-left: 39px;
   }
 }
-h4.step {
-  background-color: blue;
-}
 /*insurance*/
+#ins-added,
+#ins-declined {
+  display: none;
+}
 .insurance fieldset {
   color: #000000;
+  font-weight: normal;
 }
-.insurance fieldset .ins-bullet {
-  font-size: 1em;
-  font-weight: 500;
+.insurance fieldset h3 {
+  font-size: 1.2em;
+}
+.insurance fieldset #decline {
+  background-color: transparent;
+}
+.insurance fieldset .change-ins {
+  color: #0065b8;
+}
+.insurance fieldset .ins-added,
+.insurance fieldset .ins-declined {
+  color: blue;
+}
+.insurance fieldset .ins-bullet .ins-bullet-text {
+  font-weight: bold;
+  padding-bottom: 3px;
+  font-size: 1.1em;
 }
 .insurance fieldset .ins-bullet ul li {
-  font-size: 0.8em;
-  padding-bottom: 0.25em;
-  font-weight: 400;
+  font-weight: normal;
+  list-style-position: inside;
+}
+.insurance fieldset .ins-detail {
+  margin-top: 2px;
+}
+.insurance fieldset .ins-terms-link {
+  font-size: 0.75em;
+  margin-bottom: 0;
+}
+.insurance fieldset label.check {
+  display: inline-block;
+  width: 100%;
+  padding: 20px 5px 20px 10px;
+  background-color: #f5e9ba;
+}
+.insurance fieldset label.check .inline-label {
+  font-size: 0.9em;
+}
+@media (min-width: 60em) {
+  .insurance fieldset #ins-plan-1 {
+    float: left;
+  }
+  .insurance fieldset #ins-plan-2 {
+    float: left;
+  }
+  .insurance fieldset #noplan {
+    clear: both;
+  }
+}
+@media (min-width: 1165px) {
+  .insurance fieldset #ins-plan-1 {
+    float: left;
+  }
+  .insurance fieldset #ins-plan-2 {
+    float: right;
+  }
+  .insurance fieldset #ins-plan-2 .ins-terms-link {
+    margin-bottom: 167px;
+  }
+  .insurance fieldset #noplan {
+    clear: both;
+  }
 }
 /*@import "lib/trip-summary-v1.less";*/
