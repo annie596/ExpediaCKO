@@ -257,14 +257,15 @@
                                                 <p class="secondary">
                                                     Traveler names must match government-issued photo ID exactly.
                                                 </p>
-                                                <input style="width:46%" type="text" placeholder="First name" value="" />
-												<input style="width:46%" type="text" placeholder="Last name" value="" />
+                                                <input style="width:46%" type="text" placeholder="First name" id ="t1firstname"value="" />
+												<input style="width:46%" type="text" placeholder="Last name" id="t1lastname" value="" />
                                             </label>
+                                            <button id="getTextBoxValue">Get Value</button>
                                             <label class="text field-email">
                                                 <span class="label required">Email address
                                                     <span>*</span>
                                                 </span>
-                                                <input type="text" placeholder="We'll send your confirmation here" value="">
+                                                <input id="emailaddress"type="text" placeholder="We'll send your confirmation here" value="">
                                             </label>
                                             <label class="field-country-code select icon icon-toggle180 cc-select">
                                                 <span class="label required">Country code
@@ -302,9 +303,9 @@
                                                     <span class="label required">Date of birth
                                                         <span>*</span>
                                                     </span>
-                                                    <input style="width:20%" type="number" maxlength="2" size="2" placeHolder="dd" inlineLabel="true">
-                                                    <input style="width:20%" type="number" maxlength="2" size="2" placeHolder="mm" inlineLabel="true">
-                                                    <input style="width:50%" type="number" maxlength="4" size="4" placeHolder="yyyy" inlineLabel="true">
+                                                    <input style="width:20%" type="tel" maxlength="2" size="2" placeHolder="dd" inlineLabel="true">
+                                                    <input style="width:20%" type="tel" maxlength="2" size="2" placeHolder="mm" inlineLabel="true">
+                                                    <input style="width:50%" type="tel" maxlength="4" size="4" placeHolder="yyyy" inlineLabel="true">
                                                 </div>
                                             </label>
                                             <!-- Start of optional -->
@@ -385,8 +386,8 @@
                                                 <p class="secondary">
                                                     Traveler names must match government-issued photo ID exactly.
                                                 </p>
-                                                <input style="width:46%" type="text" placeholder="First name" value="" />
-												<input style="width:46%" type="text" placeholder="Last name" value="" />
+                                                <input style="width:46%" type="text" placeholder="First name" id="t2firstname" value="" />
+												<input style="width:46%" type="text" placeholder="Last name" id="t2lastname" value="" />
                                             </label>
                                             <label class="text">
                                                 <div style="background-color:#f5f5f5; padding:10px;">
@@ -405,9 +406,9 @@
                                                     <span class="label required">Date of birth
                                                         <span>*</span>
                                                     </span>
-                                                    <input style="width:20%" type="number" maxlength="2" size="2" placeHolder="dd" inlineLabel="true">
-                                                    <input style="width:20%" type="number" maxlength="2" size="2" placeHolder="mm" inlineLabel="true">
-                                                    <input style="width:50%" type="number" maxlength="4" size="4" placeHolder="yyyy" inlineLabel="true">
+                                                    <input style="width:20%" type="tel" maxlength="2" size="2" placeHolder="dd" inlineLabel="true">
+                                                    <input style="width:20%" type="tel" maxlength="2" size="2" placeHolder="mm" inlineLabel="true">
+                                                    <input style="width:50%" type="tel" maxlength="4" size="4" placeHolder="yyyy" inlineLabel="true">
                                                 </div>
                                             </label>
                                             <article class="toggle slide viewed ">
@@ -482,14 +483,14 @@
                                 <span class="label required">Contact Name
                                     <span>*</span>
                                 </span>
-                                <label class="remove-margin check">
-                                    <input type="radio" name="hotel" value="male" checked="checked">
-                                    <span style="color:#333333;" class="inline-label">James</span>
+                                <label for="hotel1" class="remove-margin check">
+                                    <input type="radio" name="hotel" value="male" checked="checked" id="hotel1">
+                                    <span id="hotelname1" style="color:#333333;" class="inline-label">Traveler 1</span>
                                 </label>
                                 <br/>
                                 <label class="remove-margin check">
                                     <input type="radio" name="hotel" value="female">
-                                    <span style="color:#333333;" class="inline-label">Helen</span>
+                                    <span id="hotelname2"style="color:#333333;" class="inline-label">Traveler 2</span>
                                 </label>
                                 <br/>
                                 <label class="remove-margin check">
@@ -511,12 +512,12 @@
                                 </span>
                                 <label class="remove-margin check">
                                     <input type="radio" name="activity" value="male" checked="checked">
-                                    <span style="color:#333333;" class="inline-label">James</span>
+                                    <span id="activityname1" style="color:#333333;" class="inline-label">Traveler 1 </span>
                                 </label>
                                 <br/>
                                 <label class="remove-margin check">
                                     <input type="radio" name="activity" value="female">
-                                    <span style="color:#333333;f" class="inline-label">Helen</span>
+                                    <span id="activityname2" style="color:#333333;f" class="inline-label">Traveler 2</span>
                                 </label>
                                 <br/>
                                 <label class="remove-margin">
@@ -784,7 +785,7 @@
                                 </div>
                                 <label class="text field-create-password">
                                     <span class="label ">Email address</span>
-                                    <input type="text" value="james@gmail.com" />
+                                    <input type="text" id="creationemail" value="" />
                                 </label>
                                 <label class="text field-create-password">
                                     <span class="label ">Create password</span>
