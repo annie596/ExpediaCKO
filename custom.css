@@ -1458,6 +1458,10 @@ label.saved-card-description {
     padding-left: 39px;
   }
 }
+/* Traveler Info */
+.name {
+  width: 45%;
+}
 /*insurance*/
 #ins-added,
 #ins-declined {
@@ -1527,10 +1531,13 @@ label.saved-card-description {
     float: right;
   }
   .insurance fieldset #ins-plan-2 .ins-terms-link {
-    margin-bottom: 167px;
+    margin-bottom: 155px;
   }
   .insurance fieldset #noplan {
     clear: both;
   }
+}
+.light-weight {
+  font-weight: lighter;
 }
 /*@import "lib/trip-summary-v1.less";*/
