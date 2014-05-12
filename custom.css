@@ -1480,6 +1480,9 @@ label.saved-card-description {
 .insurance fieldset .ins-declined {
   color: blue;
 }
+.insurance fieldset .ins-bullet {
+  margin-bottom: 0;
+}
 .insurance fieldset .ins-bullet .ins-bullet-text {
   font-weight: bold;
   padding-bottom: 3px;
@@ -1499,7 +1502,7 @@ label.saved-card-description {
 .insurance fieldset label.check {
   display: inline-block;
   width: 100%;
-  padding: 20px 5px 20px 10px;
+  padding: 20px 10px 20px 10px;
   background-color: #f5e9ba;
 }
 .insurance fieldset label.check .inline-label {
