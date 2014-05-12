@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<!-- Xinhe -->
+<!-- Github is smart -->
 
 <head>
     <meta charset="UTF-8" />
@@ -67,17 +69,17 @@
                                 <div class="product-data-panel">
                                     <div class="product-title">
                                         <h2 class="remove-margin" style="margin: 0px; color:#00355f;">Seattle
-                                            <span class="icon icon-roundtrip"></span>San Francisco</h2>
+                                            <span class="icon icon-roundtrip"></span>Las Vegas</h2>
                                     </div>
                                     <div class="product-sub-title remove-margin">
                                         <p>
                                             2 Tickets, 2 Adults
                                         </p>
                                         <p class="remove-margin">
-                                            <span class="bold">Depart</span> <b>Thu, Jun19</b> 2:50pm
+                                            <span class="bold">Depart</span> <b>Fri, Jun 13</b> 8:45pm
                                         </p>
                                         <p class="remove-margin">
-                                            <span class="bold">Return</span> <b>Sun, Jun22</b> 8:15pm
+                                            <span class="bold">Return</span> <b>Sun, Jun 15</b> 9:40pm
                                         </p>
                                     </div>
                                     <div class="cf">
@@ -95,17 +97,17 @@
                                 </div>
                                 <div class="product-data-panel">
                                     <div class="product-title remove-margin">
-                                        <h2 style="margin: 0px; color:#00355f;">Orchard Hotel</h2>
+                                        <h2 style="margin: 0px; color:#00355f;">Bellagio Hotel</h2>
                                     </div>
                                     <div class="product-sub-title">
                                         <p>
-                                            1 room, 3 nights
+                                            1 room, 2 nights
                                         </p>
                                         <p class="remove-margin">
-                                            <span class="bold">Check-in</span> <b>Thu, Jun 19</b>
+                                            <span class="bold">Check-in</span> <b>Fri, Jun 13</b>
                                         </p>
                                         <p class="remove-margin">
-                                            <span class="bold">Check-out</span> <b>Sun, Jun 22</b>
+                                            <span class="bold">Check-out</span> <b>Sun, Jun 15</b>
                                         </p>
                                     </div>
                                     <div class="cf">
@@ -123,11 +125,12 @@
                                 </div>
                                 <div class="product-data-panel">
                                     <div class="product-title remove-margin">
-                                        <h2 style="margin: 0px; color:#00355f;">Art Museum</h2>
+                                        <h2 style="margin: 0px; color:#00355f;">Mystère by Cirque du Soleil</h2>
                                     </div>
-                                    <div class="product-sub-title">
+                                    <div class="product-sub-title remove-margin">
+                                        <p>2 tickets</p>
                                         <p class="remove-margin">
-                                            2 tickets
+                                            <b>Sat, Jun 14</b> 9:30pm
                                         </p>
                                     </div>
                                 </div>
@@ -137,7 +140,7 @@
                             <div class="price-line cf">
                                 <span class="left price-item">Flight + Hotel</span>
                                 <div class="right price-item">
-                                    $1,114.84
+                                    $1,727.36
                                     <span class="icon icon-expand" style="visibility:hidden;"></span>
                                 </div>
                             </div>
@@ -153,20 +156,20 @@
                                     </p>
                                 </div>
                                 <div class="right price-item zero-due">
-                                    -$54.34
+                                    -$239.82
                                     <span class="icon icon-expand" style="visibility:hidden;"></span>
                                 </div>
                             </div>
                             <div class="price-line cf">
                                 <span class="left price-item">Activity</span>
                                 <div class="right price-item">
-                                    $50.00
+                                    $202.50
                                     <span class="icon icon-expand" style="visibility:hidden;"></span>
                                 </div>
                             </div>
                             <div class="price-line cf">
                                 <span class="left price-item">Total</span>
-                                <span style="font-size: 1.7em" class="right price-item">$1,120.59</span>
+                                <span style="font-size: 1.7em" class="right price-item">$1,690.04</span>
                             </div>
                             <p class="disclaimer-text">
                                 Rates quoted in US Dollars.
@@ -941,7 +944,13 @@
                                     <span class="label required">Debit/Credit card number
                                         <span>*</span>
                                     </span>
-                                    <input type="text" placeholder="" value="" maxlength="19" />
+                                    <input type="text" placeholder="" value="" maxlength="19" onfocus="scrollBack(this)"/>
+                                    <script>function scrollBack(pay) {
+                                        if (!document.getElementById('ins-option1-button').checked && !document.getElementById('ins-option2-button').checked && !document.getElementById('ins-option3-button').checked) {
+                                            document.getElementById('ins-title').scrollIntoView(true);
+                                        }
+                                    }
+                                    </script>
                                 </label>
                                 <label class="select icon icon-toggle180 field-cardtype ">
                                     <span class="label required">Card type
