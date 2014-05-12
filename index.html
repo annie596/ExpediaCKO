@@ -257,7 +257,7 @@
                                     <div class="traveler1info1" style="padding:10px 0px 10px 30px">
                                         <p id="tplayback1email1" class="secondary remove-margin">email</p>
                                         <p id="tplaybackphone1" class="secondary remove-margin">number</p>
-                                        <p id="tplaybackgender1" class="secondary remove-margin"> Male</p>
+                                        <p id="tplaybackgender1" class="secondary remove-margin"> Gender</p>
                                         <p id="tplaybackdob1" class="secondary remove-margin"> DOB
                                         </p>
                                     </div>
@@ -399,7 +399,7 @@
                                         <a id="editinfo2" style="float:right; line-height:2;margin-right:5px">Edit</a>
                                      </div>
                                     <div class="traveler2info2" style="padding:10px 0px 10px 30px">
-                                        <p id="tplaybackgender2" class="secondary remove-margin"> Male</p>
+                                        <p id="tplaybackgender2" class="secondary remove-margin"> Gender</p>
                                         <p id="tplaybackdob2" class="secondary remove-margin"> DOB
                                         </p>
                                     </div>
@@ -759,10 +759,10 @@
                                     <span id="hotelname2"style="color:#333333;" class="inline-label">Traveler 2</span>
                                 </label>
                                 <br/>
-                                <label class="remove-margin check">
-                                    <input type="radio" name="hotel" id="hotelothers"/>
-                                    <span style="color:#333333;" class="inline-label">Others</span>
-                                    <input style="display:none" class="text cko-field inline-label" type="text" placeholder="Other Contacts" />
+                                <label for="hotelbutton" class="remove-margin">
+                                    <input id="hotelbutton"type="radio" name="hotel"/>
+                                    <input id="hotelcontact" class="text cko-field inline-label" type="text" placeholder="Other Contacts" />
+                                    <br />
                                 </label>
                                     <br />
                             </fieldset>
@@ -787,8 +787,8 @@
                                 </label>
                                 <br/>
                                 <label class="remove-margin">
-                                    <input type="radio" name="activity"/>
-                                    <input class="text cko-field inline-label" type="text" placeholder="Other Contacts" />
+                                    <input id="activitybutton" type="radio" name="activity"/>
+                                    <input id="activitycontact" class="text cko-field inline-label" type="text" name="activitys"placeholder="Other Contacts" />
                                     <br />
                                 </label>
                             </fieldset>
