@@ -1,3 +1,7 @@
+h4.step {
+    background-color: #0065b8;
+    color: #ffffff;
+}
 /*insurance*/
  #ins-added, #ins-declined {
     display: none;
@@ -5,73 +9,43 @@
 .insurance {
     fieldset {
         color: #000000;
-        font-weight: normal;
         h3 {
-            font-size: 1.2em;
-        }
-        #decline {
-            background-color: transparent;
-        }
-        .change-ins {
-            color: @link;
+            font-size: 1.3em
         }
         .ins-added, .ins-declined {
             color: blue;
+            
         }
         .ins-bullet {
-            margin-bottom: 0;
             .ins-bullet-text {
-                font-weight: bold;
-                padding-bottom: 3px;
-                font-size: 1.1em;
+                font-size: 1.17em;
+                font-weight: 500;
             }
             ul li {
+                font-size: 1.1em;
                 // padding-bottom: 0.25em;
-                font-weight: normal;
+                font-weight: 400;
                 list-style-position: inside;
             }
         }
         .ins-detail {
-            margin-top: 2px;
+            margin-top: 0.1em;
         }
         .ins-terms-link {
             font-size: 0.75em;
-            margin-bottom: 0;
         }
         label.check {
             display:inline-block;
             width:100%;
-            padding: 20px 10px 20px 10px;
+            padding: 20px 5px 20px 10px;
             background-color: #f5e9ba;
             // line-height: 21px;
             .inline-label {
-                font-size: 0.9em;
+                font-size:0.9em;
             }
         }
-        @media (min-width: @mqMinDesktop) {
-            #ins-plan-1 {
-                float: left;
-            }
-            #ins-plan-2 {
-                float: left;
-            }
-            #noplan {
-                clear: both;
-            }
-        }
-        @media (min-width: 1165px) {
-            #ins-plan-1 {
-                float: left;
-            }
-            #ins-plan-2 {
-                float: right;
-                .ins-terms-link {
-                    margin-bottom: 167px;
-                }
-            }
-            #noplan {
-                clear: both;
-            }
+        #decline {
+            background-color: transparent;
         }
     }
 }
