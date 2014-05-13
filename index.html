@@ -807,7 +807,7 @@
                         </hgroup>
                         <fieldset>
                         <h4 style="margin-top:0px;color:#ffffff;background-color:#0065b8;padding:5px 0px 5px 10px;" class="step" id="ins-title">Step 2 of 3: Choose Insurance</h4>
-                        <span class="label-required">Please select an insurance plan</span><span>*</span>
+                        <span class="label required">Please select an insurance plan</span><span>*</span>
                         <article class="no-target cf segment-form insurance">
 
 
@@ -945,13 +945,7 @@
                                     <span class="label required">Debit/Credit card number
                                         <span>*</span>
                                     </span>
-                                    <input type="text" placeholder="" value="" maxlength="19" onfocus="scrollBack(this)"/>
-                                    <script>function scrollBack(pay) {
-                                        if (!document.getElementById('ins-option1-button').checked && !document.getElementById('ins-option2-button').checked && !document.getElementById('ins-option3-button').checked) {
-                                            document.getElementById('ins-title').scrollIntoView(true);
-                                        }
-                                    }
-                                    </script>
+                                    <input type="text" placeholder="" value="" maxlength="19" onfocus="scrollBack()"/>
                                 </label>
                                 <label class="select icon icon-toggle180 field-cardtype ">
                                     <span class="label required">Card type
