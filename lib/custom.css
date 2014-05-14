@@ -1458,4 +1458,8 @@ label.saved-card-description {
     padding-left: 39px;
   }
 }
+
+.light-weight {
+  font-weight: 400;
+}
 /*@import "lib/trip-summary-v1.less";*/
