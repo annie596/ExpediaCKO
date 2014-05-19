@@ -1283,12 +1283,13 @@ label.saved-card-description {
 
 }
 .trip-summary-container .product-info-panel {
-  margin-bottom: 24px;
+  margin-bottom: 12px;
   width: 100%;
 }
 .trip-summary-container .product-info-panel .product-image-panel {
   float: left;
-  margin-top: 2px;
+  margin-top: 7px;
+  margin-left: 7px;
   max-width: 74px;
 }
 .trip-summary-container .product-info-panel .product-data-panel {
@@ -1458,13 +1459,10 @@ label.saved-card-description {
     padding-left: 39px;
   }
 }
-<<<<<<< HEAD
 /* Traveler Info */
-.name {
-  width: 45%;
+#traveler1 {
+  padding-left: 10px;
 }
-=======
->>>>>>> 3cb71367d054fc8e971256e2998adc70879de0b0
 /*insurance*/
 #ins-added,
 #ins-declined {
@@ -1475,7 +1473,10 @@ label.saved-card-description {
   font-weight: normal;
 }
 .insurance fieldset h3 {
-  font-size: 1.2em;
+  font-size: 1.1em;
+}
+.insurance fieldset .insurance-benefits {
+  padding-left: 7px;
 }
 .insurance fieldset #decline {
   background-color: transparent;
@@ -1493,11 +1494,14 @@ label.saved-card-description {
 .insurance fieldset .ins-bullet .ins-bullet-text {
   font-weight: bold;
   padding-bottom: 3px;
-  font-size: 1.1em;
+  font-size: 1em;
 }
-.insurance fieldset .ins-bullet ul li {
+.insurance fieldset .ins-bullet ul {
   font-weight: normal;
   list-style-position: inside;
+}
+.insurance fieldset .ins-bullet li {
+  color: #454545;
 }
 .insurance fieldset .ins-detail {
   margin-top: 2px;
@@ -1534,20 +1538,13 @@ label.saved-card-description {
     float: right;
   }
   .insurance fieldset #ins-plan-2 .ins-terms-link {
-<<<<<<< HEAD
     margin-bottom: 155px;
-=======
-    margin-bottom: 167px;
->>>>>>> 3cb71367d054fc8e971256e2998adc70879de0b0
   }
   .insurance fieldset #noplan {
     clear: both;
   }
-<<<<<<< HEAD
 }
 .light-weight {
   font-weight: lighter;
-=======
->>>>>>> 3cb71367d054fc8e971256e2998adc70879de0b0
 }
 /*@import "lib/trip-summary-v1.less";*/

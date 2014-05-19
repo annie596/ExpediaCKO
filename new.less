@@ -1,9 +1,7 @@
 /* Traveler Info */
-.name {
-    width: 45%;
+#traveler1 {
+    padding-left: 10px;
 }
-
-
 
 /*insurance*/
  #ins-added, #ins-declined {
@@ -14,7 +12,10 @@
         color: #000000;
         font-weight: normal;
         h3 {
-            font-size: 1.2em;
+            font-size: 1.1em;
+        }
+        .insurance-benefits{
+            padding-left: 7px;
         }
         #decline {
             background-color: transparent;
@@ -30,12 +31,15 @@
             .ins-bullet-text {
                 font-weight: bold;
                 padding-bottom: 3px;
-                font-size: 1.1em;
+                font-size: 1em;
             }
-            ul li {
+            ul{
                 // padding-bottom: 0.25em;
                 font-weight: normal;
                 list-style-position: inside;
+            }
+            li {
+                color: @grey;
             }
         }
         .ins-detail {
