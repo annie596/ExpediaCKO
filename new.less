@@ -1,92 +1,104 @@
-/* Traveler Info */
-#traveler1 {
-    padding-left: 10px;
-}
+/* Trip Sum */
 
+/*traveler info */
+ .travelerinfo {
+    .name-field {
+        width:46%;
+        max-width:219px;
+    }
+    .editbutton {
+        color: @link;
+        font-size: 0.8em;
+        line-height: 2;
+        margin-right: 10px;
+        float: right;
+    }
+    .stepbar {
+        margin-top:0px;
+        color:#ffffff;
+        background-color:#0065b8;
+        padding:5px 0px 5px 10px;
+    }
+    .loyalty {
+        font-size:0.9em;
+        padding-top:10px;
+    }
+    .traveler-select {
+        margin: 2px 0px;
+    }
+    .traveler-title {
+        margin:0px 20px 0px 20px;
+        background-color:#d1eaff;
+        padding:7px 10px;
+        max-width: 455px;
+    }
+    .playback-edit {
+        display:none;
+        margin-bottom:10px;
+        button.update {
+            margin-top: 10px;
+        }
+    }
+    .infoplayback {
+        .playbacktitle {
+            background-color:#d1eaff;
+            margin:4px 20px 0px 20px;
+        }
+        .playback-detail {
+            padding:10px 0px 10px 40px;
+            margin:0px 20px 15px 20px;
+            background-color:#eee;
+        }
+    }
+}
 /*insurance*/
- #ins-added, #ins-declined {
+ #ins-added1, #ins-added2, #ins-declined {
     display: none;
 }
 .insurance {
     fieldset {
         color: #000000;
-        font-weight: normal;
         h3 {
-            font-size: 1.1em;
-        }
-        .insurance-benefits{
-            padding-left: 7px;
-        }
-        #decline {
-            background-color: transparent;
-        }
-        .change-ins {
-            color: @link;
+            font-size: 1.1em
         }
         .ins-added, .ins-declined {
             color: blue;
         }
         .ins-bullet {
-            margin-bottom: 0;
             .ins-bullet-text {
-                font-weight: bold;
-                padding-bottom: 3px;
-                font-size: 1em;
+                font-size: 1.17em;
+                font-weight: 500;
             }
-            ul{
+            ul {
                 // padding-bottom: 0.25em;
                 font-weight: normal;
                 list-style-position: inside;
             }
             li {
                 color: @grey;
+                line-height: 120%;
             }
         }
         .ins-detail {
-            margin-top: 2px;
+            margin-top: 0.1em;
         }
         .ins-terms-link {
             font-size: 0.75em;
-            margin-bottom: 0;
+            margin: 5px 0px 0px 32px;
         }
         label.check {
             display:inline-block;
             width:100%;
-            padding: 20px 10px 20px 10px;
+            margin-bottom: 0px;
+            padding: 20px 5px 20px 10px;
             background-color: #f5e9ba;
             // line-height: 21px;
             .inline-label {
-                font-size: 0.9em;
+                font-size:0.9em;
             }
         }
-        @media (min-width: @mqMinDesktop) {
-            #ins-plan-1 {
-                float: left;
-            }
-            #ins-plan-2 {
-                float: left;
-            }
-            #noplan {
-                clear: both;
-            }
-        }
-        @media (min-width: 1165px) {
-            #ins-plan-1 {
-                float: left;
-            }
-            #ins-plan-2 {
-                float: right;
-                .ins-terms-link {
-                    margin-bottom: 155px;
-                }
-            }
-            #noplan {
-                clear: both;
-            }
+        #decline {
+            background-color: transparent;
         }
     }
-}
-// font */
-.light-weight {
-    font-weight: lighter;
 }

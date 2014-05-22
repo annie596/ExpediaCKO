@@ -2843,7 +2843,22 @@ input.masked {
     position:relative;
     float:left;
     zoom:1;
-    padding-left:1.411764705882353em
+    padding-left:1em
+}
+@media only screen and (max-width:480px) {
+    .col {
+        padding-left: 0em;
+    }
+    .product-info-panel
+     {
+        padding-left: 10px;
+    }
+    .price-info-panel {
+        padding-left: 50px;
+    }
+    .confidence-container {
+        padding-left: 24px;
+    }
 }
 .cols-nested {
     position:relative;

@@ -220,7 +220,7 @@ h1.section-header-main {
 .sa-header {
   display: inline-block !important;
   float: none !important;
-  /*	width:100%; 
+  /*  width:100%; 
 */
 
 }
@@ -326,30 +326,30 @@ label.select {
 }
 .checkout section[role="main"] {
   /*.details {
-	  float:left;
-	  width: 78%;
-	  ul {
-	  	margin:0;
-	  	padding:0;
-	  	list-style: none;
-	  	#font > .sizeIncludeLineheight(13,@baseFontPx);
-	  }
-	  li {
-	  	display:inline-block;
-	  	float:left;
-	  	max-width:100%;
-	  	.margin(r,13,12);
-	  	padding:0;
-	  	color:@textSecondary;
-	  	overflow: hidden;
-	    text-overflow:ellipsis;
-	  }
-	}*/
+    float:left;
+    width: 78%;
+    ul {
+      margin:0;
+      padding:0;
+      list-style: none;
+      #font > .sizeIncludeLineheight(13,@baseFontPx);
+    }
+    li {
+      display:inline-block;
+      float:left;
+      max-width:100%;
+      .margin(r,13,12);
+      padding:0;
+      color:@textSecondary;
+      overflow: hidden;
+      text-overflow:ellipsis;
+    }
+  }*/
 
-  /*	//If displaying a saved card when there is just one line of playback
-	.one-line-playback{
-	  	margin-bottom:0 !important;
-	}
+  /*  //If displaying a saved card when there is just one line of playback
+  .one-line-playback{
+      margin-bottom:0 !important;
+  }
 */
 
 }
@@ -450,9 +450,9 @@ label.select {
   float: right;
   font-size: 0.7647058823529411em;
   /*@media (max-width: @bpLgPh) {
-			text-align:right;
-			width:100%;
-		}*/
+      text-align:right;
+      width:100%;
+    }*/
 
 }
 .checkout section[role="main"] hgroup .icon.success {
@@ -749,51 +749,51 @@ label.field-flight-number input {
   max-width: 270px;
 }
 /*label.field-renter-number {
-	width:100%;
-	@media (min-width: @bpLgPh) {
-		max-width: 275px;	
-	}
+  width:100%;
+  @media (min-width: @bpLgPh) {
+    max-width: 275px; 
+  }
 }
 
 
 
 label.field-ff-program-name {
-	float:left;
-	margin-right:12px;
+  float:left;
+  margin-right:12px;
 
 }
 
 label.field-ff-program-number {
-	float:left;
-	width:100%;
-	@media (min-width: @bpSmTab) {
-		max-width: 150px;	
-	}
-	span.label {
-		display: none;
-		@media (min-width: @bpSmTab) {
-			display:block;
-			visibility: hidden;
-		}
-	}
+  float:left;
+  width:100%;
+  @media (min-width: @bpSmTab) {
+    max-width: 150px; 
+  }
+  span.label {
+    display: none;
+    @media (min-width: @bpSmTab) {
+      display:block;
+      visibility: hidden;
+    }
+  }
 }
 
 label.field-airline-name {
-	float:left;
-	margin-right:12px;
+  float:left;
+  margin-right:12px;
 }
 
 label.field-flight-number {
-	float:left;
-	max-width: 140px;	
-	
-	span.label {
-		display: none;
-		@media (min-width: @bpLgPh) {
-			display:block;
-			visibility: hidden;
-		}
-	}	
+  float:left;
+  max-width: 140px; 
+  
+  span.label {
+    display: none;
+    @media (min-width: @bpLgPh) {
+      display:block;
+      visibility: hidden;
+    }
+  } 
 }
 */
 h3.optional-field-heading {
@@ -855,12 +855,12 @@ label.field-cardtype {
 fieldset.expiration-fields {
   margin-right: 24px;
   /*REMOVED FOR BANDAID VERSION
-	
-	.field-validation-msg {
-		@media (min-width: @bpLgPh) {
-		max-width:176px; 
-		}
-	}*/
+  
+  .field-validation-msg {
+    @media (min-width: @bpLgPh) {
+    max-width:176px; 
+    }
+  }*/
 
 }
 label.field-cardnumber {
@@ -1023,7 +1023,7 @@ label.saved-card-description {
   width: 100%;
 }
 .insurance fieldset label.check .inline-label {
-  /*				
+  /*        
 */
   font-size: 13px;
   color: #1f1f1f;
@@ -1312,7 +1312,7 @@ label.saved-card-description {
 }
 .trip-summary-container .trip-info-panel .trip-location {
   display: inline-block;
-  /*			font-weight: bold;*/
+  /*      font-weight: bold;*/
 
 }
 .trip-summary-container .trip-info-panel .date {
@@ -1457,5 +1457,16 @@ label.saved-card-description {
   .account-creation fieldset {
     padding-left: 39px;
   }
+}
+
+.light-weight {
+  font-weight: 400;
+}
+
+#inswarning {
+    -webkit-transition: all 3s ease;
+    -moz-transition: all 3s ease;
+    -o-transition: all 3s ease;
+    transition: all 3s ease;
 }
 /*@import "lib/trip-summary-v1.less";*/

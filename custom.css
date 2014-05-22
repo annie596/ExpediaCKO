@@ -997,7 +997,6 @@ label.saved-card-description {
 .insurance fieldset .ins-bullet {
   margin-bottom: 6px;
   font-size: 13px;
-  line-height: 18px;
 }
 .insurance fieldset .ins-bullet .icon-success {
   display: table-cell;
@@ -1277,20 +1276,29 @@ label.saved-card-description {
   margin-top: 39px;
   width: 100%;
   font-size: 13px;
+  margin-right: 1.7em;
   /*START PRICE*/
 
   /*END PRICE*/
 
 }
 .trip-summary-container .product-info-panel {
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   width: 100%;
+}
+.trip-summary-container .product-info-panel .tripsum-card {
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 7px;
 }
 .trip-summary-container .product-info-panel .product-image-panel {
   float: left;
   margin-top: 7px;
-  margin-left: 7px;
+  margin-left: 15px;
   max-width: 74px;
+}
+.trip-summary-container .product-info-panel .product-image-panel .icon {
+  color: #00355f;
 }
 .trip-summary-container .product-info-panel .product-data-panel {
   margin-left: 86px;
@@ -1298,8 +1306,11 @@ label.saved-card-description {
 .trip-summary-container .product-info-panel .product-data-panel .product-title {
   font-weight: bold;
   font-size: 13px;
-  /*color:@text;*/
-
+}
+.trip-summary-container .product-info-panel .product-data-panel .product-title h2 {
+  color: #00355f;
+  font-size: 1.25em;
+  line-height: 1.5em;
 }
 .trip-summary-container .product-info-panel .product-data-panel .product-attributes .attribute {
   margin-right: 3px;
@@ -1308,7 +1319,7 @@ label.saved-card-description {
   margin-right: 2px;
 }
 .trip-summary-container .trip-info-panel {
-  margin-bottom: 24px;
+  margin-bottom: 12px;
   width: 100%;
 }
 .trip-summary-container .trip-info-panel .trip-location {
@@ -1401,13 +1412,17 @@ label.saved-card-description {
     /*display: inline;*/
   
   }
-  .product-info-panel {
+  .product-info-panel,
+  .trip-info-panel {
     float: left;
   }
-  .trip-info-panel,
   .price-info-panel {
     float: right;
   }
+}
+/*Desktop*/
+@media screen and (min-width: 880px) {
+  
 }
 /*Mobile*/
 @media screen and (max-width: 880px) {
@@ -1459,42 +1474,73 @@ label.saved-card-description {
     padding-left: 39px;
   }
 }
-/* Traveler Info */
-#traveler1 {
-  padding-left: 10px;
+/* Trip Sum */
+/*traveler info */
+.travelerinfo .name-field {
+  width: 46%;
+  max-width: 219px;
+}
+.travelerinfo .editbutton {
+  color: #0065b8;
+  font-size: 0.8em;
+  line-height: 2;
+  margin-right: 10px;
+  float: right;
+}
+.travelerinfo .stepbar {
+  margin-top: 0px;
+  color: #ffffff;
+  background-color: #0065b8;
+  padding: 5px 0px 5px 10px;
+}
+.travelerinfo .loyalty {
+  font-size: 0.9em;
+  padding-top: 10px;
+}
+.travelerinfo .traveler-select {
+  margin: 2px 0px;
+}
+.travelerinfo .traveler-title {
+  margin: 0px 20px 0px 20px;
+  background-color: #d1eaff;
+  padding: 7px 10px;
+  max-width: 455px;
+}
+.travelerinfo .playback-edit {
+  display: none;
+  margin-bottom: 10px;
+}
+.travelerinfo .playback-edit button.update {
+  margin-top: 10px;
+}
+.travelerinfo .infoplayback .playbacktitle {
+  background-color: #d1eaff;
+  margin: 4px 20px 0px 20px;
+}
+.travelerinfo .infoplayback .playback-detail {
+  padding: 10px 0px 10px 40px;
+  margin: 0px 20px 15px 20px;
+  background-color: #eee;
 }
 /*insurance*/
-#ins-added,
+#ins-added1,
+#ins-added2,
 #ins-declined {
   display: none;
 }
 .insurance fieldset {
   color: #000000;
-  font-weight: normal;
 }
 .insurance fieldset h3 {
   font-size: 1.1em;
-}
-.insurance fieldset .insurance-benefits {
-  padding-left: 7px;
-}
-.insurance fieldset #decline {
-  background-color: transparent;
-}
-.insurance fieldset .change-ins {
-  color: #0065b8;
 }
 .insurance fieldset .ins-added,
 .insurance fieldset .ins-declined {
   color: blue;
 }
-.insurance fieldset .ins-bullet {
-  margin-bottom: 0;
-}
 .insurance fieldset .ins-bullet .ins-bullet-text {
-  font-weight: bold;
-  padding-bottom: 3px;
-  font-size: 1em;
+  font-size: 1.17em;
+  font-weight: 500;
 }
 .insurance fieldset .ins-bullet ul {
   font-weight: normal;
@@ -1502,49 +1548,26 @@ label.saved-card-description {
 }
 .insurance fieldset .ins-bullet li {
   color: #454545;
+  line-height: 120%;
 }
 .insurance fieldset .ins-detail {
-  margin-top: 2px;
+  margin-top: 0.1em;
 }
 .insurance fieldset .ins-terms-link {
   font-size: 0.75em;
-  margin-bottom: 0;
+  margin: 5px 0px 0px 32px;
 }
 .insurance fieldset label.check {
   display: inline-block;
   width: 100%;
-  padding: 20px 10px 20px 10px;
+  margin-bottom: 0px;
+  padding: 20px 5px 20px 10px;
   background-color: #f5e9ba;
 }
 .insurance fieldset label.check .inline-label {
   font-size: 0.9em;
 }
-@media (min-width: 60em) {
-  .insurance fieldset #ins-plan-1 {
-    float: left;
-  }
-  .insurance fieldset #ins-plan-2 {
-    float: left;
-  }
-  .insurance fieldset #noplan {
-    clear: both;
-  }
-}
-@media (min-width: 1165px) {
-  .insurance fieldset #ins-plan-1 {
-    float: left;
-  }
-  .insurance fieldset #ins-plan-2 {
-    float: right;
-  }
-  .insurance fieldset #ins-plan-2 .ins-terms-link {
-    margin-bottom: 155px;
-  }
-  .insurance fieldset #noplan {
-    clear: both;
-  }
-}
-.light-weight {
-  font-weight: lighter;
+.insurance fieldset #decline {
+  background-color: transparent;
 }
 /*@import "lib/trip-summary-v1.less";*/
