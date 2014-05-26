@@ -58,7 +58,7 @@
 
             <aside class="col tripsum" role="complementary">
                 <div class="trip-summary-container">
-                    <div class="cols-nested">
+                    <div class="cols-nested scroller">
 
                         <!-- begin of flight-->
                         <div class="col product-info-panel">
@@ -80,7 +80,9 @@
                                         </p>
                                         <p class="remove-margin">
                                             <b>Fri, Jun 13, 7:26pm</b>
+                                            <br>
                                             <span class="icon icon-roundtrip" style="font-size:80%; color:#aaa;"></span>
+                                            <br>
                                             <b>Sun, Jun 15, 6:50pm</b> 
                                         </p>
                                     </div>
@@ -106,8 +108,8 @@
                                         </p>
                                         <p class="remove-margin">
                                             Check-in<b>Fri, Jun 13</b>
-                                            <br>
-                                            Check-out<b>Sun, Jun 15</b>
+                                            <br>Check-out
+                                            <b>Sun, Jun 15</b>
                                         </p>
                                     </div>
                                     <div class="cf">
@@ -162,16 +164,16 @@
                                     <span class="icon icon-expand" style="visibility:hidden;"></span>
                                 </div>
                             </div>
-                            <div class="price-line cf">
+                            <div class="price-line activity-price cf">
                                 <span class="left price-item">Activity</span>
                                 <div class="right price-item">
                                     $170.80
                                     <span class="icon icon-expand" style="visibility:hidden;"></span>
                                 </div>
                             </div>
-                            <div class="price-line cf">
+                            <div class="price-line cf ">
                                 <span class="left price-item">Total</span>
-                                <span style="font-size: 1.7em" class="right price-item">$1,433.23</span>
+                                <span style="font-size: 1.7em" class="right price-item total" >$1,433.23</span>
                             </div>
                             <p class="disclaimer-text">
                                 Rates quoted in US Dollars.
@@ -256,7 +258,7 @@
                                     2 Adults
                                 </span>
                             </h4>
-                            <p class="secondary" style="padding:5px 0px 5px 20px;">
+                            <p class="secondary id-msg">
                                 Traveler names must match government-issued photo ID exactly.
                             </p>
 
@@ -334,9 +336,9 @@
                                                     <span class="label required">Date of birth
                                                         <span>*</span>
                                                     </span>
-                                                    <input id="t1monthpform" style="width:20%" type="tel" maxlength="2" size="2" placeHolder="MM" inlineLabel="true">
-                                                    <input id="t1daypform" style="width:20%" type="tel" maxlength="2" size="2" placeHolder="DD" inlineLabel="true">
-                                                    <input id="t1yearpform" style="width:50%" type="tel" maxlength="4" size="4" placeHolder="YYYY" inlineLabel="true">
+                                                    <input id="t1monthpform" style="width:25%" type="tel" maxlength="2" size="2" placeHolder="MM" inlineLabel="true">
+                                                    <input id="t1daypform" style="width:25%" type="tel" maxlength="2" size="2" placeHolder="DD" inlineLabel="true">
+                                                    <input id="t1yearpform" style="width:45%" type="tel" maxlength="4" size="4" placeHolder="YYYY" inlineLabel="true">
                                                 </label>
 
                                                 <!-- Start of optional -->
@@ -458,9 +460,9 @@
                                                     <span class="label required">Date of birth
                                                         <span>*</span>
                                                     </span>
-                                                    <input id="t2monthpform" style="width:20%" type="tel" maxlength="2" size="2" placeHolder="MM" inlineLabel="true">
-                                                    <input id="t2daypform" style="width:20%" type="tel" maxlength="2" size="2" placeHolder="DD" inlineLabel="true">
-                                                    <input id="t2yearpform" style="width:50%" type="tel" maxlength="4" size="4" placeHolder="YYYY" inlineLabel="true">
+                                                    <input id="t2monthpform" style="width:25%" type="tel" maxlength="2" size="2" placeHolder="MM" inlineLabel="true">
+                                                    <input id="t2daypform" style="width:25%" type="tel" maxlength="2" size="2" placeHolder="DD" inlineLabel="true">
+                                                    <input id="t2yearpform" style="width:45%" type="tel" maxlength="4" size="4" placeHolder="YYYY" inlineLabel="true">
                                                 </label>
 
                                                 <!-- Start of optional -->
@@ -539,7 +541,7 @@
                             <article id="traveler1form" class="no-target cf segment-form notsignedin toggle open">
                                 <h5 class="traveler-title"><a href="#traveler1" aria-controls="traveler1" class="toggle-trigger open" data-control="toggle" data-transition="slide">Traveler 1<span class="icon icon-expand"></span></a>
                                 </h5>
-                                <div id="traveler1" class="toggle-pane form-content" role="region" style="padding:5px 30px;" aria-expanded="true">
+                                <div id="traveler1" class="toggle-pane form-content" role="region" aria-expanded="true">
                                     <div class="toggle-inner cf">
 
                                         <!-- start of basic info -->
@@ -589,14 +591,13 @@
                                                         <span style="color:#333333" class="inline-label">Female</span>
                                                     </label>
                                                 </fieldset>
-                                            </label>
-                                            <label class="text">
+                                            
                                                 <span class="label required">Date of birth
                                                     <span>*</span>
                                                 </span>
-                                                <input id="t1month" style="width:20%" type="tel" maxlength="2" size="2" placeHolder="MM" inlineLabel="true">
-                                                <input id="t1day" style="width:20%" type="tel" maxlength="2" size="2" placeHolder="DD" inlineLabel="true">
-                                                <input id="t1year" style="width:50%" type="tel" maxlength="4" size="4" placeHolder="YYYY" inlineLabel="true">
+                                                <input id="t1month" style="width:25%" type="tel" maxlength="2" size="2" placeHolder="MM" inlineLabel="true">
+                                                <input id="t1day" style="width:25%" type="tel" maxlength="2" size="2" placeHolder="DD" inlineLabel="true">
+                                                <input id="t1year" style="width:45%" type="tel" maxlength="4" size="4" placeHolder="YYYY" inlineLabel="true">
                                             </label>
 
 
@@ -670,7 +671,7 @@
                                 <h5 class="traveler-title"><a id="traveler2link" href="#traveler2" aria-controls="traveler2" class="toggle-trigger open" data-control="toggle" data-transition="slide">Traveler 2<span class="icon icon-expand"></span></a>
                                 </h5>
                                 <div id="traveler2" class="toggle-pane" role="region" aria-expanded="true">
-                                    <div class="toggle-inner cf" style="padding:5px 30px;">
+                                    <div class="toggle-inner cf form-content">
                                         <!-- start of basic info -->
                                         <fieldset style="padding-bottom:20px">
                                             <div class="text field-contactname">
@@ -693,73 +694,72 @@
                                                     <input id="t2female" type="radio" name="t2gender" value="female">
                                                     <span style="color:#333333" class="inline-label">Female</span>
                                                 </label>
-                                             </label>
-                                                <label class="text">
-                                                    <span class="label required">Date of birth
-                                                        <span>*</span>
-                                                    </span>
-                                                    <input id="t2month" style="width:20%" type="tel" maxlength="2" size="2" placeHolder="MM" inlineLabel="true">
-                                                    <input id="t2day" style="width:20%" type="tel" maxlength="2" size="2" placeHolder="DD" inlineLabel="true">
-                                                    <input id="t2year" style="width:50%" type="tel" maxlength="4" size="4" placeHolder="YYYY" inlineLabel="true">
-                                                </label>
-                                                <article class="toggle slide viewed ">
-                                                    <p class="loyalty">
-                                                        <a href="#advancedlist1" aria-controls="advancedlist1" class="toggle-trigger" data-transition="slide" data-control="toggle">Loyalty and Emergency contact<span class="icon icon-expand"></span></a>
-                                                    </p>
-                                                    <div id="advancedlist1" class="toggle-pane" role="region" aria-expanded="false" style="visibility: hidden; height: 0px; opacity: 0; overflow: hidden;">
-                                                        <div class="toggle-inner cf">
-                                                            <fieldset class="optional-fieldset">
-                                                                <label class="text">
-                                                                    <p style="font-size:0.9em;">
-                                                                        <b>Flight company: Delta</b>
-                                                                    </p>
-                                                                </label>
-                                                                <h3 class="optional-field-heading">Frequent flyer information</h3>
-                                                                <label class="select icon icon-toggle180 field-ff-program-name">
-                                                                    <span class="label">Frequent flyer information</span>
-                                                                    <select class="cko-field" maxlength="30">
-                                                                        <option value="a">Select a program</option>
-                                                                        <option class="select-dash" disabled="disabled">-- My Programs --</option>
-                                                                        <option value="b">LAM Mozambique Flights Airlines</option>
-                                                                        <option value="c">Alaska Airlines</option>
-                                                                        <option class="select-dash" disabled="disabled">-- All Programs --</option>
-                                                                        <option value="d">Aero Mexico</option>
-                                                                        <option value="e">Baltic Airlines</option>
-                                                                        <option value="f">Cathay Pacific</option>
-                                                                    </select>
-                                                                </label>
-                                                                <label class="text field-ff-program-number">
-                                                                    <span class="label">Program number</span>
-                                                                    <input class="text cko-field " data-cko-blur="fieldValidation" placeholder="Program number" required title="Enter your program number" type="text">
-                                                                </label>
-                                                                <div class="cf">
-                                                                </div>
-                                                                <label class="text">
-                                                                    <p class="label">
-                                                                        Emergcy Contact
-                                                                    </p>
-                                                                </label>
-                                                                <label class="text field-ff-program-number">
-                                                                    <input class="text cko-field" type="text" placeholder="Emergcy contact name" />
-                                                                </label>
-                                                                <label class="field-country-code select icon icon-toggle180 cc-select">
-                                                                    <span class="label required">Country code
-                                                                        <span>*</span>
-                                                                    </span>
-                                                                    <select name="country-code" id="ccodeSelect" data-control="country-code-select" data-target-id="phoneNumber">
-                                                                        <option value="54" data-country-iso="ar" data-country-name="Argentina">Argentina +54</option>
-                                                                        <option value="44" data-country-iso="gb" data-country-name="United Kingdom">United Kingdom +44</option>
-                                                                        <option value="1" data-country-iso="us" data-country-name="United States" selected="selected">United States +1</option>
-                                                                        <option value="84" data-country-iso="vn" data-country-name="Vietnam">Vietnam +84</option>
-                                                                    </select>
-                                                                </label>
-                                                                <label class="field-ff-program-number text icon-before phone-number cc-input">
-                                                                    <input type="tel" maxlength="30" placeholder="Conact phone number" value="" id="phoneNumber">
-                                                                </label>
-                                                            </fieldset>
-                                                        </div>
+                                            
+                                                <span class="label required">Date of birth
+                                                    <span>*</span>
+                                                </span>
+                                                <input id="t2month" style="width:25%" type="tel" maxlength="2" size="2" placeHolder="MM" inlineLabel="true">
+                                                <input id="t2day" style="width:25%" type="tel" maxlength="2" size="2" placeHolder="DD" inlineLabel="true">
+                                                <input id="t2year" style="width:45%" type="tel" maxlength="4" size="4" placeHolder="YYYY" inlineLabel="true">
+                                            </label>
+                                            <article class="toggle slide viewed ">
+                                                <p class="loyalty">
+                                                    <a href="#advancedlist1" aria-controls="advancedlist1" class="toggle-trigger" data-transition="slide" data-control="toggle">Loyalty and Emergency contact<span class="icon icon-expand"></span></a>
+                                                </p>
+                                                <div id="advancedlist1" class="toggle-pane" role="region" aria-expanded="false" style="visibility: hidden; height: 0px; opacity: 0; overflow: hidden;">
+                                                    <div class="toggle-inner cf">
+                                                        <fieldset class="optional-fieldset">
+                                                            <label class="text">
+                                                                <p style="font-size:0.9em;">
+                                                                    <b>Flight company: Delta</b>
+                                                                </p>
+                                                            </label>
+                                                            <h3 class="optional-field-heading">Frequent flyer information</h3>
+                                                            <label class="select icon icon-toggle180 field-ff-program-name">
+                                                                <span class="label">Frequent flyer information</span>
+                                                                <select class="cko-field" maxlength="30">
+                                                                    <option value="a">Select a program</option>
+                                                                    <option class="select-dash" disabled="disabled">-- My Programs --</option>
+                                                                    <option value="b">LAM Mozambique Flights Airlines</option>
+                                                                    <option value="c">Alaska Airlines</option>
+                                                                    <option class="select-dash" disabled="disabled">-- All Programs --</option>
+                                                                    <option value="d">Aero Mexico</option>
+                                                                    <option value="e">Baltic Airlines</option>
+                                                                    <option value="f">Cathay Pacific</option>
+                                                                </select>
+                                                            </label>
+                                                            <label class="text field-ff-program-number">
+                                                                <span class="label">Program number</span>
+                                                                <input class="text cko-field " data-cko-blur="fieldValidation" placeholder="Program number" required title="Enter your program number" type="text">
+                                                            </label>
+                                                            <div class="cf">
+                                                            </div>
+                                                            <label class="text">
+                                                                <p class="label">
+                                                                    Emergcy Contact
+                                                                </p>
+                                                            </label>
+                                                            <label class="text field-ff-program-number">
+                                                                <input class="text cko-field" type="text" placeholder="Emergcy contact name" />
+                                                            </label>
+                                                            <label class="field-country-code select icon icon-toggle180 cc-select">
+                                                                <span class="label required">Country code
+                                                                    <span>*</span>
+                                                                </span>
+                                                                <select name="country-code" id="ccodeSelect" data-control="country-code-select" data-target-id="phoneNumber">
+                                                                    <option value="54" data-country-iso="ar" data-country-name="Argentina">Argentina +54</option>
+                                                                    <option value="44" data-country-iso="gb" data-country-name="United Kingdom">United Kingdom +44</option>
+                                                                    <option value="1" data-country-iso="us" data-country-name="United States" selected="selected">United States +1</option>
+                                                                    <option value="84" data-country-iso="vn" data-country-name="Vietnam">Vietnam +84</option>
+                                                                </select>
+                                                            </label>
+                                                            <label class="field-ff-program-number text icon-before phone-number cc-input">
+                                                                <input type="tel" maxlength="30" placeholder="Conact phone number" value="" id="phoneNumber">
+                                                            </label>
+                                                        </fieldset>
                                                     </div>
-                                                </article>
+                                                </div>
+                                            </article>
                                         </fieldset>
                                     </div>
                                 </div>
@@ -773,7 +773,7 @@
                                     <!-- Bellagio Hotel, -->
                                     <span class="light-weight">2 Nights, 1 Room, King bed</span>
                                 </h4>
-                                <span class="secondary" style="padding-left:20px;">
+                                <span class="secondary id-msg">
                                     Please tell us who will be checking in. Must be 18 or older.
                                 </span>
                                 <fieldset id="hotelinfo" style="padding:10px 0px 0px 30px ;">
@@ -818,7 +818,7 @@
                             <h4 style="margin-bottom:0px">Activities:
                                 <span class="light-weight">Mystère by Cirque du Soleil, 2 Tickets</span>
                             </h4>
-                            <span class="secondary" style="padding: 10px 0px 0px 20px;">Please tell us who will redeem the voucher(s).</span>
+                            <span class="secondary id-msg">Please tell us who will redeem the voucher(s).</span>
                             <fieldset id="activityinfo" style="padding:10px 30px;">
 
                                 <span class="label required">Contact Name
@@ -899,7 +899,9 @@
                                         </span>
                                     </p>
                                     <fieldset id="ins-plan-1">
-                                        <h3>Vacation Waiver</h3>
+                                        <h3>Vacation Waiver
+                                            <span class="secondary insurance-c-dt">See details</span>
+                                        </h3>
                                         <div class="insurance-benefits cf">
                                             <div class="ins-bullet">
                                                 <div>
@@ -995,7 +997,7 @@
                                 </div>
                             </div>
                             <label class="text field-cardnumber ">
-                                <span class="label required">Debit/Credit card number
+                                <span type="tel" class="label required">Debit/Credit card number
                                     <span>*</span>
                                 </span>
                                 <input type="text" placeholder="" value="" maxlength="19" onfocus="scrollBack()" />
@@ -1050,7 +1052,7 @@
                                 <div class="cf">
                                 </div>
                             </fieldset>
-                            <label class="text field-cvv ">
+                            <label class="text field-cvv " type="tel">
                                 <span class="label required">Card identification number
                                     <span>*</span>
                                     <a href="#what-is-this" class="what-is-this-tooltip-icon" data-control='tooltip' data-width="225" data-arrow="true" aria-describedby="what-is-this" data-fade="out" data-tooltip-id="what-is-this-tooltip-icon">
@@ -1080,7 +1082,7 @@
                                 <input type="text" placeholder="" value="" />
                             </label>
                             <label class="text field-billingzip">
-                                <span class="label required">Billing ZIP code
+                                <span class="label required" type="tel">Billing ZIP code
                                     <span>*</span>
                                 </span>
                                 <input type="text" placeholder="" value="" maxlength="8" />
@@ -1114,8 +1116,8 @@
                                     <span class="acct-bullet-text">Faster checkout</span>
                                 </div>
                             </div>
-                            <p class="secondary">Email</p>
-                            <b><span id="creationemail" class="secondary">Primary contact email address</b>
+                            <p class="label">Email</p>
+                            <span id="creationemail" class="secondary">Primary contact email address</span>
                             <label class="text field-create-password">
                                 <span class="label ">Create password</span>
                                 <input type="password" placeholder="6-30 characters, no spaces" value="" />
@@ -1138,7 +1140,8 @@
                         <p class="secondary">
                             By completing this booking, I agree that I have read and accept the <a href="https://wwwexpediacom.trunk-stubbed.sb.karmalab.net/Checkout/RulesAndRestrictions?tripid=7a44000b-2cd9-454e-8cf6-ec92c6fc7f40">Rules &amp; Restrictions</a>, <a href="http://www.expedia.com/daily/service/legal.asp" target="_blank">Terms of Use</a> and <a href="http://www.expedia.com/daily/service/privacy.asp" target="_blank">Privacy Policy</a>.
                         </p>
-                        <button class="btn btn-action btn-primary" data-cko-click="submitForm" id="complete-booking" type="button" onclick="javascript:$('#confirmmodal').fadeToggle();">
+                        <button class="btn btn-action btn-primary" data-cko-click="submitForm" id="complete-booking" type="button" >
+                            <!-- onclick="javascript:$('#confirmmodal').fadeToggle();" -->
                             <span class="btn-label">Complete Reservation
                                 <span class="icon icon-toggle90"></span>
                             </span>

@@ -1294,14 +1294,14 @@ label.saved-card-description {
 .trip-summary-container .product-info-panel .product-image-panel {
   float: left;
   margin-top: 7px;
-  margin-left: 15px;
-  max-width: 74px;
+  margin-left: 10px;
 }
 .trip-summary-container .product-info-panel .product-image-panel .icon {
   color: #00355f;
+  font-size: 90%;
 }
 .trip-summary-container .product-info-panel .product-data-panel {
-  margin-left: 86px;
+  margin-left: 60px;
 }
 .trip-summary-container .product-info-panel .product-data-panel .product-title {
   font-weight: bold;
@@ -1309,8 +1309,9 @@ label.saved-card-description {
 }
 .trip-summary-container .product-info-panel .product-data-panel .product-title h2 {
   color: #00355f;
-  font-size: 1.25em;
-  line-height: 1.5em;
+  font-size: 1.2em;
+  line-height: 1.45em;
+  padding-bottom: 5px;
 }
 .trip-summary-container .product-info-panel .product-data-panel .product-attributes .attribute {
   margin-right: 3px;
@@ -1474,10 +1475,16 @@ label.saved-card-description {
     padding-left: 39px;
   }
 }
-/* Trip Sum */
+/*Responsive*/
 /*traveler info */
+.travelerinfo .id-msg {
+  padding: 5px 0px 5px 20px;
+}
+.travelerinfo .form-content {
+  padding: 5px 30px;
+}
 .travelerinfo .name-field {
-  width: 46%;
+  width: 47%;
   max-width: 219px;
 }
 .travelerinfo .editbutton {
@@ -1492,6 +1499,7 @@ label.saved-card-description {
   color: #ffffff;
   background-color: #0065b8;
   padding: 5px 0px 5px 10px;
+  font-size: 90%;
 }
 .travelerinfo .loyalty {
   font-size: 0.9em;
@@ -1505,6 +1513,17 @@ label.saved-card-description {
   background-color: #d1eaff;
   padding: 7px 10px;
   max-width: 455px;
+}
+@media only screen and (max-width: 480px) {
+  .travelerinfo .id-msg {
+    padding: 5px 0px 7px 0px;
+  }
+  .travelerinfo .traveler-title {
+    margin: 0px;
+  }
+  .travelerinfo .form-content {
+    padding: 5px 2px;
+  }
 }
 .travelerinfo .playback-edit {
   display: none;
@@ -1522,6 +1541,11 @@ label.saved-card-description {
   margin: 0px 20px 15px 20px;
   background-color: #eee;
 }
+@media only screen and (max-width: 480px) {
+  .travelerinfo .infoplayback .playbacktitle {
+    margin: 4px 5px 0px 5px;
+  }
+}
 /*insurance*/
 #ins-added1,
 #ins-added2,
@@ -1537,6 +1561,11 @@ label.saved-card-description {
 .insurance fieldset .ins-added,
 .insurance fieldset .ins-declined {
   color: blue;
+}
+.insurance fieldset #ins-plans .insurance-c-dt {
+  color: #0065b8;
+  margin-right: 10px;
+  float: right;
 }
 .insurance fieldset .ins-bullet .ins-bullet-text {
   font-size: 1.17em;
