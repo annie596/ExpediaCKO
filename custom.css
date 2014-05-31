@@ -1476,6 +1476,15 @@ label.saved-card-description {
   }
 }
 /*Responsive*/
+#traveler-info-done {
+  float: right;
+  min-width: 200px;
+}
+@media only screen and (max-width: 480px) {
+  #traveler-info-done {
+    width: 85%;
+  }
+}
 /*traveler info */
 .travelerinfo .id-msg {
   padding: 5px 0px 5px 20px;
@@ -1532,6 +1541,19 @@ label.saved-card-description {
 .travelerinfo .playback-edit button.update {
   margin-top: 10px;
 }
+.travelerinfo #hotelplayback,
+.travelerinfo #activityplayback {
+  margin: 5px 20px 10px 20px;
+  background-color: #d1eaff;
+  display: none;
+  padding-top: 3px;
+}
+@media only screen and (max-width: 480px) {
+  .travelerinfo #hotelplayback,
+  .travelerinfo #activityplayback {
+    margin: 3px 0px;
+  }
+}
 .travelerinfo .infoplayback .playbacktitle {
   background-color: #d1eaff;
   margin: 4px 20px 0px 20px;
@@ -1543,7 +1565,12 @@ label.saved-card-description {
 }
 @media only screen and (max-width: 480px) {
   .travelerinfo .infoplayback .playbacktitle {
-    margin: 4px 5px 0px 5px;
+    margin: 3px 0px;
+  }
+  .travelerinfo .infoplayback .playback-detail {
+    padding: 5px 0px 5px 40px;
+    margin: 0px 5px;
+    background-color: #eee;
   }
 }
 /*insurance*/
@@ -1567,6 +1594,25 @@ label.saved-card-description {
   margin-right: 10px;
   float: right;
 }
+@media only screen and (min-width: 600px) {
+  .insurance fieldset #ins-plans #ins-plans {
+    max-width: 100%;
+    display: block;
+  }
+  .insurance fieldset #ins-plans #noplan {
+    clear: both;
+  }
+  .insurance fieldset #ins-plans #ins-plan-1 {
+    float: left;
+    max-width: 48%;
+    margin-right: 5px;
+  }
+  .insurance fieldset #ins-plans #ins-plan-2 {
+    float: right;
+    max-width: 48%;
+    margin-left: 5px;
+  }
+}
 .insurance fieldset .ins-bullet .ins-bullet-text {
   font-size: 1.17em;
   font-weight: 500;
@@ -1574,6 +1620,7 @@ label.saved-card-description {
 .insurance fieldset .ins-bullet ul {
   font-weight: normal;
   list-style-position: inside;
+  font-size: 85%;
 }
 .insurance fieldset .ins-bullet li {
   color: #454545;

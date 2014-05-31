@@ -1,5 +1,11 @@
 /*Responsive*/
-
+ #traveler-info-done {
+    float: right;
+    min-width: 200px;
+    @media only screen and (max-width:480px) {
+        width: 85%;
+    }
+}
 /*traveler info */
  .travelerinfo {
     .id-msg {
@@ -57,6 +63,15 @@
             margin-top: 10px;
         }
     }
+    #hotelplayback, #activityplayback {
+        margin:5px 20px 10px 20px;
+        background-color:#d1eaff;
+        display:none;
+        padding-top:3px;
+        @media only screen and (max-width:480px) {
+            margin:3px 0px;
+        }
+    }
     .infoplayback {
         .playbacktitle {
             background-color:#d1eaff;
@@ -69,8 +84,13 @@
         }
         @media only screen and (max-width:480px) {
             .playbacktitle {
-                margin:4px 5px 0px 5px;
+                margin:3px 0px;
             }
+            .playback-detail {
+            padding:5px 0px 5px 40px;
+            margin:0px 5px;
+            background-color:#eee;
+        }
         }
     }
 }
@@ -93,6 +113,25 @@
                 margin-right: 10px;
                 float: right;
             }
+            @media only screen and (min-width:600px) {
+                #ins-plans {
+                    max-width: 100%;
+                    display: block;
+                }
+                #noplan {
+                    clear: both;
+                }
+                #ins-plan-1 {
+                    float: left;
+                    max-width: 48%;
+                    margin-right:5px;
+                }
+                #ins-plan-2 {
+                    float: right;
+                    max-width: 48%;
+                    margin-left: 5px;
+                }
+            }
         }
         .ins-bullet {
             .ins-bullet-text {
@@ -103,6 +142,7 @@
                 // padding-bottom: 0.25em;
                 font-weight: normal;
                 list-style-position: inside;
+                font-size: 85%;
             }
             li {
                 color: @grey;
